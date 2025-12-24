@@ -32,20 +32,38 @@ The analog message signal is first generated as a cosine waveform and discretize
 
 At the receiver, non-coherent demodulation is performed by passing the received signal through a device, which produces a DC component proportional to the signal envelope along with a high-frequency term. Envelope detection (low-pass filtering) removes the high-frequency component to recover the NRZ waveform. The recovered NRZ signal is then converted back into binary data, decoded into quantized sample values, and envelope detection is applied to reconstruct the signal. Finally, the reconstructed signal is compared with the original analog signal to verify successful transmission and reception.
 
-![Original Message](<img width="640" height="480" alt="Image" src="https://github.com/user-attachments/assets/4a43d970-a20d-45e7-b369-b9941eb517f5" />
-)
-![Samples](<img width="640" height="480" alt="Image" src="https://github.com/user-attachments/assets/30d442b2-e0f8-40b5-a567-b19c84e7ecef" />
-)
-![Quantization](<img width="640" height="480" alt="Image" src="https://github.com/user-attachments/assets/a01cbb5d-fff9-4112-b2da-eadd65b54796" />
-)
-![Pulses](<img width="640" height="480" alt="Image" src="https://github.com/user-attachments/assets/b3ed67fd-1983-493d-ada6-c92a6bbecf22" />
-)
-![BASK](<img width="640" height="480" alt="Image" src="https://github.com/user-attachments/assets/8411a145-23a1-4fd6-9c77-7598e9045392" />
-)
-![Envelope detection](<img width="640" height="480" alt="Image" src="https://github.com/user-attachments/assets/7c0c4ede-0d0d-493b-9f8f-78d5f752bc67" />
-)
-![Received Pulses](<img width="640" height="480" alt="Image" src="https://github.com/user-attachments/assets/f375daa9-7e00-4e6c-a889-64c5ad132621" />
-)
-![Samples](<img width="640" height="480" alt="Image" src="https://github.com/user-attachments/assets/c28557a2-0f6f-474f-bff3-7e40fd071a7c" />
-)
-![Comparision](<img width="640" height="480" alt="Image" src="https://github.com/user-attachments/assets/1ff89787-31fc-40e3-9c1a-499039d5fece" />)
+<h3>Original Message Signal</h3>
+<img width="640" height="480" alt="Original message signal"
+     src="https://github.com/user-attachments/assets/4a43d970-a20d-45e7-b369-b9941eb517f5" />
+
+<h3>Sampled Signal</h3>
+<img width="640" height="480" alt="Sampled signal using ideal sampling"
+     src="https://github.com/user-attachments/assets/30d442b2-e0f8-40b5-a567-b19c84e7ecef" />
+
+<h3>Quantized Signal</h3>
+<img width="640" height="480" alt="Quantized signal"
+     src="https://github.com/user-attachments/assets/a01cbb5d-fff9-4112-b2da-eadd65b54796" />
+
+<h3>NRZ Pulses</h3>
+<img width="640" height="480" alt="NRZ unipolar pulses"
+     src="https://github.com/user-attachments/assets/b3ed67fd-1983-493d-ada6-c92a6bbecf22" />
+
+<h3>BASK Modulated Signal</h3>
+<img width="640" height="480" alt="BASK modulated signal"
+     src="https://github.com/user-attachments/assets/8411a145-23a1-4fd6-9c77-7598e9045392" />
+
+<h3>Envelope Detection</h3>
+<img width="640" height="480" alt="Envelope detection output"
+     src="https://github.com/user-attachments/assets/7c0c4ede-0d0d-493b-9f8f-78d5f752bc67" />
+
+<h3>Recovered NRZ Pulses</h3>
+<img width="640" height="480" alt="Recovered NRZ pulses"
+     src="https://github.com/user-attachments/assets/f375daa9-7e00-4e6c-a889-64c5ad132621" />
+
+<h3>Recovered Samples</h3>
+<img width="640" height="480" alt="Recovered quantized samples"
+     src="https://github.com/user-attachments/assets/c28557a2-0f6f-474f-bff3-7e40fd071a7c" />
+
+<h3>Original vs Demodulated Signal</h3>
+<img width="640" height="480" alt="Comparison of original and demodulated signal"
+     src="https://github.com/user-attachments/assets/1ff89787-31fc-40e3-9c1a-499039d5fece" />
